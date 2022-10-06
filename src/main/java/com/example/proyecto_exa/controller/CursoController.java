@@ -37,7 +37,7 @@ public class CursoController {
     @PostMapping("/crear")
     public String crear(@RequestBody Curso u){    
      String mensaje="";
-        if (u.getNombre().equals("") || u.getDescripcion().equals("") || u.getNivel().equals("") || u.getIdcurso().equals("") || u.getIdprofesor().equals("")) {
+        if (u.getNombre().equals("") || u.getDescripcion().equals("") || u.getNivel().equals("")  || u.getIdprofesor().equals("")) {
             mensaje ="no pueden haber campos nulos";
             
         } else {
